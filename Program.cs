@@ -6,11 +6,12 @@ namespace Vezbe
     {
         static void Main(string[] args)
         {
-            foreach(int min in new int[6] { 3, 4, 5, 10, 110, 120 })
-            {
-                // Za domaci, neka ovo proradi:
-                Console.WriteLine($"{min} minuta je {Vreme.MinUSate(min)}");
-            }
+            // ovo ne dirajte, ovo radi magiju koja ce da vam testira program
+            // sve sto treba menjati se nadje ako odete u klasu koja je ispod u <...>
+            //                 evo bas ovu
+            //                      |
+            //                      v
+            Test.PokreniTestoveZa<Vreme>();
         }
     }
 }
