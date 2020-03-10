@@ -6,11 +6,11 @@ namespace Vezbe
     {
         static void Main(string[] args)
         {
-            int tc = 0;
-            Console.WriteLine(Konverter.PretvoriUFarenhajte(tc));
-            int tf = 95;
-            Console.WriteLine(Konverter.PretvoriUCelzijuse(tf));
+            foreach(int min in new int[6] { 3, 4, 5, 10, 110, 120 })
+            {
+                // Za domaci, neka ovo proradi:
+                Console.WriteLine($"{min} minuta je {Vreme.MinUSate(min)}");
+            }
         }
-
     }
 }
