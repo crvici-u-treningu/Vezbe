@@ -6,7 +6,11 @@ namespace Vezbe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int tc = 0;
+            Console.WriteLine(Konverter.PretvoriUFarenhajte(tc));
+            int tf = 95;
+            Console.WriteLine(Konverter.PretvoriUCelzijuse(tf));
         }
+
     }
 }
