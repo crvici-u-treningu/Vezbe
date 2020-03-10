@@ -9,7 +9,8 @@ namespace Vezbe
         {
             int h = 0; //... ovde menjaj
             int m = 0; //... ovde menjaj
-            
+
+			//pogledaj dropbox, kako koristi podeljeno (/) i ostatak (%)
             return $"{h}h {m}min";
         }
     }
