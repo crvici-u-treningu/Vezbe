@@ -4,14 +4,18 @@ namespace Vezbe
 {
     public class Vreme
     {
-        // primer: 100min -> 1h 40minuta
-        public static string MinUSate(int min)
+        // primer: 145min -> 2h 25minuta
+        public static string MinUSate(int x)
         {
-            int h = 0; //... ovde menjaj
-            int m = 0; //... ovde menjaj
+            int h = 60; //... ovde menjaj
+            //x/h=a
+            int a = x / h;
+            int m = x - a*h; //... ovde menjaj
+            //
+            
 
 			//pogledaj dropbox, kako koristi podeljeno (/) i ostatak (%)
-            return $"{h}h {m}min";
+            return $"{a}h {m}min";
         }
     }
 }
