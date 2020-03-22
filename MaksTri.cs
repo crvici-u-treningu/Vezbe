@@ -10,21 +10,21 @@ namespace Vezbe
         {
             if (a > b && a > c)
             { 
-                Console.WriteLine("a");
+                return a;
             }
             
             {
                 if (b > c && b > a)
                 {
-                    Console.WriteLine("b");
+                    return b;
                 }
             
                 if (c > a && c > b)
                 {
-                    Console.WriteLine("c");
+                    return c;
                 }
             }
-            return 0;
+            return a;
         }
     }
 }
