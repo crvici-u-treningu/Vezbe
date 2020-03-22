@@ -58,7 +58,31 @@ namespace Vezbe
                         Console.WriteLine($"[:)]\t\tOd brojeva {brojevi.Item1}, {brojevi.Item2}, i {brojevi.Item3} najveci je {dobro}, a vi ste rekli {test}.");
                     }
                 }
+            } else if(typeof(T) == typeof(NegPos))
+            {
+                Random r = new Random();
+                for(int i = 0; i < 10; i++) {
+                    int a = 0;
+                    while(a == 0) a = r.Next(-1000, 1000);
+
+                    int b = 0;
+                    while(b == 0) b = r.Next(-1000, 1000);
+
+                    var test = NegPos.DaLiJeJedanPozitivanDrugiNe(a, b);
+                    var dobro = (a < 0 && b > 0) || (b < 0 && a > 0);
+                    if(dobro == test) {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine($"[:)]\t\tBile ste u pravu za brojeve {a} i {b}, odgovor je: {dobro}! Istog su znaka.");
+                    }
+                    else 
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"[:)]\t\tZa brojeve {a} i {b} je trebalo da odgovorite sa {dobro}, ali rekle ste {test}.");
+                    }
+                }
             }
+
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

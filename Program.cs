@@ -11,7 +11,7 @@ namespace Vezbe
             //                 evo bas ovu
             //                      |
             //                      v
-            Test.PokreniTestoveZa<MaksTri>();
+            Test.PokreniTestoveZa<NegPos>();
         }
     }
 }
