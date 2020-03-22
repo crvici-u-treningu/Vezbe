@@ -8,23 +8,23 @@ namespace Vezbe
     {
         public static int DajMaksTri(int a, int b, int c)
         {
-            if (a > b && a > c)
-            { 
-                return a;
-            }
-            
+            /*
+             * a=5, b=3, c=2
+             */
+            if (a > b)
             {
-                if (b > c && b > a)
-                {
-                    return b;
-                }
-            
-                if (c > a && c > b)
-                {
-                    return c;
-                }
+                if (a > c)
+                    return a;
+                else return c;
+
             }
-            return a;
+            else
+            {
+                if (b > c)
+                    return b;
+                else return c;
+            }
+           
         }
     }
 }
