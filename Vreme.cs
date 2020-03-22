@@ -7,15 +7,13 @@ namespace Vezbe
         // primer: 145min -> 2h 25minuta
         public static string MinUSate(int x)
         {
-            int h = 60; //... ovde menjaj
-            //x/h=a
-            int a = x / h;
-            int m = x - a*h; //... ovde menjaj
+            int h = x/60; //... ovde menjaj
+            int m = x%60; //... ovde menjaj
             //
             
 
 			//pogledaj dropbox, kako koristi podeljeno (/) i ostatak (%)
-            return $"{a}h {m}min";
+            return $"{h}h {m}min";
         }
     }
 }
