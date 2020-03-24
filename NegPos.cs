@@ -18,6 +18,12 @@ namespace Vezbe
             // primer #5: a = 0, b = 5      ==>     true, b je pozitivan, a nije pozitivan
             // primer #6: a = 0, b = 0      ==>     false, oba su nula, pa nijedan nije pozitivan
 
+            if (a > 0 && b <= 0)
+                return true;
+            else
+            if (a <= 0 && b > 0)
+                return true;
+
             return false;
         }
     }
