@@ -80,6 +80,10 @@ namespace Vezbe
                         Console.WriteLine($"[:)]\t\tZa brojeve {a} i {b} je trebalo da odgovorite sa {dobro}, ali rekle ste {test}.");
                     }
                 }
+            } else if(typeof(T) == typeof(Rozvel))
+            {
+                Console.SetWindowSize(80, 45);
+                new Area51().Test();
             }
 
             Console.ForegroundColor = ConsoleColor.White;
