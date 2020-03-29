@@ -51,6 +51,8 @@ namespace Vezbe
                 Jr234f9w0ef(8, 3)    -> true
                 Jr234f9w0ef(77, 34)  -> false
                 Jr234f9w0ef(20, 0)   -> true
+                Jr234f9w0ef(24, 5)   -> true
+                Jr234f9w0ef(3, 24)   -> true
 
             KAD POKRENETE PROGRAM: u pogon ce se pustiti ukupno
             2683 testova, koliko je tajna grana CIA-e napravila
@@ -67,8 +69,13 @@ namespace Vezbe
 
         // slobodno preimenujte parametre, ovako je samo
         // kopirano sa broda. Ostavite ime funkcije isto!
-        public static bool Jr234f9w0ef(int m23f, int ng4y) {
-            return false;
+        public static bool Jr234f9w0ef(int a, int b)
+        {
+            
+            if ((a * b == 0) || (a * b == 24) || a == 24 || b == 24)
+                return true;
+            else return false;
+            
         }
     }
 }

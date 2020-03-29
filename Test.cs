@@ -82,7 +82,7 @@ namespace Vezbe
                 }
             } else if(typeof(T) == typeof(Rozvel))
             {
-                Console.SetWindowSize(80, 45);
+               
                 new Area51().Test();
             }
 
