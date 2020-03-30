@@ -13,12 +13,46 @@ namespace Vezbe
                 return $"{min / 60}h {min % 60}min";
             }
 
-            static bool Prestupna(int broj)
+            if (typeof(T) == typeof(NajduzaRec))
             {
-                return ((broj % 4 == 0 && broj % 100 != 0) || (broj % 400 == 0));
-            }
+                string[] recenice = new string[]
+                {
+                    "sova je vesela",
+                    "maleni mica voli svoju mamu",
+                    "ne u sumu suade, tamo je medo",
+                    "ovo je bas lako",
+                    "djavole zivi zasto dzambasas",
+                    "znam neke male reci",
+                    "ne zaboravi da tacke ne treba brojati... (ovde je odgovor 8, a ne 10)"
+                };
 
-            if (typeof(T) == typeof(Vreme))
+                int[] odgovori = new int[]
+                {
+                    6,
+                    6,
+                    5,
+                    4,
+                    9,
+                    4,
+                    8
+                };
+
+                Console.WriteLine("");
+                for(int i = 0; i < recenice.Length; i++)
+                {
+                    var recenica = recenice[i];
+                    var tacan = odgovori[i];
+
+                    var pokusaj = NajduzaRec.NadjiDuzinuNajduzeReciU(recenica);
+                    if(pokusaj == tacan)
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    else
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(" " + recenica + " ===> " + pokusaj);
+                }
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else if (typeof(T) == typeof(Vreme))
             {
                 foreach (int min in new int[10] { 0, 3, 40, 60, 65, 110, 120, 720, 1244, 2000 })
                 {

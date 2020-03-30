@@ -45,7 +45,7 @@ namespace ConsoleApp2
             return rezultat;
         }
 
-        static void Main(string[] args)
+        static void NeMain(string[] args)
         {
 /*
             Console.WriteLine(DaLiPocinjeSlovomB("qweqwe"));
