@@ -58,8 +58,20 @@ namespace Vezbe
 
         public static int NadjiDuzinuNajduzeReciU(string recenica)
         {
-            int duzina;
-            return recenica.Length;
+            int max = 0;
+            int i = 0;
+            int brojacSlova = 0;
+            
+            while (i < recenica.Length)
+            {
+                if (recenica[i] == ' ')
+                {
+                    brojacSlova++;
+                    i++;
+                }
+                i++;
+            }
+            return max;
         }
     }
 }
