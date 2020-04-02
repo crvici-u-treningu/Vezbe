@@ -58,7 +58,8 @@ namespace Vezbe
 
         public static int NadjiDuzinuNajduzeReciU(string recenica)
         {
-            return 0;
+            int duzina;
+            return recenica.Length;
         }
     }
 }
