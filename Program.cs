@@ -11,14 +11,7 @@ namespace Vezbe
             //                 evo bas ovu
             //                      |
             //                      v
-            //            Test.PokreniTestoveZa<Zagrade>();
-
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("("));
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("((()))"));
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("()"));
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("(())"));
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("(()"));
-            Console.WriteLine(Zagrade.DaLiSuSveZagradeZatvorene("())"));
+            Test.PokreniTestoveZa<NajduzaRec>();
         }
     }
 }

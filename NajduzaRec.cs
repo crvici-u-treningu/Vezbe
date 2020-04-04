@@ -62,15 +62,32 @@ namespace Vezbe
             int i = 0;
             int brojacSlova = 0;
             
+            // to je lopta
+            // ^^x^^x^^^^^
             while (i < recenica.Length)
             {
-                if (recenica[i] == ' ')
+                // ako nije spejs, onda treba da brojimo slova jer smo trenutno u reci
+                if (recenica[i] != ' ')
                 {
                     brojacSlova++;
-                    i++;
+                }
+                else // ako jeste spejs, obrisi broj slova koji smo dosad skupili, krecemo iz pocetka
+                {
+                    // ovde je sigurno kraj reci, tako da treba da proverimo sta je max
+                    if (max < brojacSlova)   // ako je max < brojacSlova, onda nam treba novi max
+                    {
+                        max = brojacSlova;
+                    }
+                    brojacSlova = 0;
                 }
                 i++;
             }
+
+            if (max < brojacSlova)   // ako je max < brojacSlova, onda nam treba novi max
+            {
+                max = brojacSlova;
+            }
+
             return max;
         }
     }
