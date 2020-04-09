@@ -45,7 +45,21 @@ namespace Zadatak1
                 Console.WriteLine();
             }
         }
-        static void Main(string[] args)
+
+        static void Pravougaonik (int a, int b)
+        {
+            for (int red = 1; red <= a; red++)
+            {
+
+                for (int korona = 1; korona <= b; korona++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+        }
+        static void aMain(string[] args)
         {
             Console.Write("daj mi jedan broj: ");
             int n = Read.Int();
@@ -59,11 +73,15 @@ namespace Zadatak1
                 for (int korona = 1; korona <= m; korona++)
                 {
                     //Format(red * korona);
-                    Console.Write("*");
+                    if (red == 1 || red == n || korona == 1 || korona == m)
+                        Console.Write("*");
+                    else Console.Write(" ");
+
                 }
 
                 Console.WriteLine();
             }
+
 
             /*n = 5
 1 2 3 4 5
@@ -75,6 +93,7 @@ namespace Zadatak1
             //Kaendar(n);
             Console.WriteLine();
             //TabMnozenja(n);
+            //Pravougaonik(n, m);
 
             
 
