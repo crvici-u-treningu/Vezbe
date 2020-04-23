@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vezbe", "Vezbe.csproj", "{5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak1", "Zadatak1\Zadatak1.csproj", "{BA02E05A-6742-4900-851F-9A6F9F352D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak2", "..\Zadatak2\Zadatak2.csproj", "{6540AE78-806D-4A2C-8D40-3EB677D2AB0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak2", "..\Zadatak2\Zadatak2.csproj", "{6540AE78-806D-4A2C-8D40-3EB677D2AB0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak3", "..\Zadatak3\Zadatak3.csproj", "{993C68D0-82C7-4088-9635-AD07C4437600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zadatak3", "..\Zadatak3\Zadatak3.csproj", "{993C68D0-82C7-4088-9635-AD07C4437600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak5", "..\zadatak5\Zadatak5.csproj", "{9E226652-3F16-4466-B55A-8160D0E537C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{993C68D0-82C7-4088-9635-AD07C4437600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993C68D0-82C7-4088-9635-AD07C4437600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{993C68D0-82C7-4088-9635-AD07C4437600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E226652-3F16-4466-B55A-8160D0E537C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E226652-3F16-4466-B55A-8160D0E537C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E226652-3F16-4466-B55A-8160D0E537C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E226652-3F16-4466-B55A-8160D0E537C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
