@@ -62,9 +62,9 @@ namespace Zadatak1
         static void aMain(string[] args)
         {
             Console.Write("daj mi jedan broj: ");
-            int n = Read.Int();
+            int n = 0; //Read.Int();
             Console.Write("daj mi drugi broj: ");
-            int m = Read.Int();
+            int m = 0; //Read.Int();
             Console.WriteLine("*");
 
             for (int red = 1; red <= n; red++)
